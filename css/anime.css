@@ -1,0 +1,369 @@
+body{
+    background-color: #32394F;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*animate aloqa*/
+.aloqa a{
+    display: inline-block;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+}
+.aloqa a:nth-child(1)
+{
+    filter: hue-rotate(290deg);
+}
+.aloqa a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1 {
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+
+a span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2 {
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+
+a span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate3 {
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+a span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4 {
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+/*Afzalliklar*/
+.container {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.container .serviceBox{
+    position: relative;
+    width: 300px;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .6);
+}
+/*end*/
+.container .serviceBox .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--i);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.container .serviceBox:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+    background: rgba(0,0,0,.6);
+    backdrop-filter: grayscale(1) contrast(3) opacity(20%);
+}
+.container .serviceBox:hover .icon
+{
+    top: 30px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.container .serviceBox .icon i{
+    font-size: 5em;
+    color: #fff;
+}
+.container .serviceBox:hover .icon i{
+    font-size: 2em;
+}
+.container .serviceBox .content {
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.7s;
+}
+.container .serviceBox:hover .content{
+    transform: scale(1);
+}
+.container .serviceBox .content p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.container .serviceBox:nth-child(1)
+{
+    background-image: url("../img/1.JPG");
+
+}
+.container .serviceBox:nth-child(2)
+{
+    background-image: url("../img/2.JPG");
+}
+.container .serviceBox:nth-child(3)
+{
+    background-image: url("../img/3.JPG");
+}
+.container .serviceBox:nth-child(4)
+{
+    background-image: url("../img/4.jpg");
+}
+.container .serviceBox:nth-child(5)
+{
+    background-image: url("../img/5.jpg");
+}
+
+/*priz*/
+.present {
+    width: 410px;
+    margin: 0 auto;
+}
+.box, .lid {
+    background:
+            -webkit-radial-gradient(white 15%, transparent 15.1%),
+            -webkit-radial-gradient(white 15%, transparent 15.1%),
+            rgb(23, 255, 0);
+    background-position: 0 0, 25px 25px;
+    background-size: 50px 50px;
+    position: relative;
+    margin: 0 auto;
+}
+.box {
+    width: 400px;
+    height: 250px;
+}
+.lid {
+    width: 404px;
+    height: 70px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0 2px;
+    background-color: rgb(23, 255, 0);
+
+    /* transitions */
+    top: 0;
+    left: 0;
+    transition:
+            top ease-out 0.5s,
+            left ease-out 0.5s,
+            transform ease-out 0.5s;
+}
+.box span, .lid span {
+    position: absolute;
+    display: block;
+    background: rgba(216, 52, 52,0);
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+}
+.box span:first-child {
+    width: 100%;
+    height: 60px;
+    top: 80px;
+}
+.box span:last-child, .lid span {
+    width: 60px;
+    height: 100%;
+    left: 170px;
+    margin-bottom:  25px;
+}
+.lid span {
+    left: 172px;
+}
+.priz{
+    align-items: center;
+    justify-content: center;
+}
+.promo {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    height: 0;
+    top: 10px;
+    transition: all ease-out 0.7s;
+}
+.promo p {
+    font-size: 24px;
+    color: #f40317;
+    margin: 0;
+}
+.promo h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+/* hover effects */
+.present:hover .lid {
+    top: -100px;
+    transform: rotateZ(10deg);
+    left: 10px;
+}
+.present:hover .promo {
+    top: -80px;
+}
+/*priz and*/
+/*corusel xizmatlar*/
+.lolcorusel{
+
+    overflow: hidden;
+    background-image: url("../img/bgcor.jpg");
+}
+.hi-slide{
+    position: relative;
+    width: 754px;
+    height: 292px;
+    margin: 115px auto 0;
+}
+
+
+.hi-slide .hi-next,
+.hi-slide .hi-prive{
+    position: absolute;
+    top:50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    transition: all 0.7s;
+    font-size: 20px;
+    font-weight: bold;
+}
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prive:hover{
+opacity: 1;
+    background-color: white;
+}
+.hi-slide .hi-prive{
+    left: -70px;
+}
+.hi-slide .hi-prive::before{
+    content: '<';
+}
+.hi-slide .hi-next{
+    right: -70px;
+}
+.hi-slide .hi-next::before{
+    content: '>';
+}
+.hi-slide > ul{
+    list-style: none;
+    position: relative;
+    width: 754px;
+    height: 292px;
+    padding: 0;
+    margin: 0;
+}
+.hi-slide > ul > li{
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 147px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 3px solid white;
+    background-color: #333;
+    cursor: pointer;
+}
+.hi-slide > ul > li > img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+
+/*corusel and*/
+
+
+
+
