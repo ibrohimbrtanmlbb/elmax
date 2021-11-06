@@ -75,8 +75,41 @@
     background: transparent;
 
 }
+
+/*chegirma*/
+.chegim img{
+    width: 150px;
+    height: 150px;
+    margin-left: 22%;
+    justify-content: center;
+    align-items: center;
+}
+.chegbg{
+    background-color: #0F1827;
+    color: white;
+    display: flex;
+}
+.texx{
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5%;
+}
+.texx h3{
+    color: limegreen;
+}
+/*and*/
+
 /*mijoz fikri*/
 /* General Style */
+.ugl {
+   justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    --bs-gutter-x: 6.5rem;
+
+}
 
 .wrapper {
     height: 300px;
@@ -182,13 +215,48 @@ img {
     transform: rotateY(180deg);
 }
 
+
 /*form*/
-.formcont{
-    background-color: white;
+.displl{
+    display: flex;
 }
-.forma{
-    background: #050801;
-    align-items: center;
-    justify-content: center;
-    display: inline-block;
+/**/
+/*siz bilan qanday ishlaymiz*/
+.ishlol{
+    border-radius: 10px;
+    padding: 1px 12px 0 4px;
 }
+
+.numb{
+    width: 60px;
+    height: 60px;
+    border: solid 10px blue;
+    border-radius: 10px;
+    font-size: 27px;
+    color: white;
+    text-align: center;
+    margin: 7px;
+    margin-bottom: 0;
+    float: left;
+}
+
+.texish{
+    text-align: center;
+    background-color: red;
+    width: 200px;
+    height: 26px;
+    border-radius: 13px;
+    position: relative;
+    top: -10px;
+    float: right;
+    left: auto;
+    color: white;
+    font-weight: bold;
+}
+.itext{
+    margin-top: -2px;
+    line-height: 16px;
+    font-size: 15px;
+    color: #fff;
+}
+

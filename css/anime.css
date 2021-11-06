@@ -1,5 +1,4 @@
 body{
-    background-color: #32394F;
     font-family: sans-serif;
     padding: 0;
     margin: 0;
@@ -109,7 +108,7 @@ a span:nth-child(4)
 }
 
 /*Afzalliklar*/
-.container {
+.custom-container {
     position: relative;
     justify-content: center;
     display: flex;
@@ -153,11 +152,11 @@ a span:nth-child(4)
     height: 80px;
     border-radius: 50%;
 }
-.container .serviceBox .icon i{
+.container .serviceBox .icon i,img{
     font-size: 5em;
     color: #fff;
 }
-.container .serviceBox:hover .icon i{
+.container .serviceBox:hover .icon i, img{
     font-size: 2em;
 }
 .container .serviceBox .content {
@@ -201,58 +200,25 @@ a span:nth-child(4)
 
 /*priz*/
 .present {
-    width: 410px;
+    width: 200px;
+    height: 70px;
     margin: 0 auto;
+    display: block;
 }
 .box, .lid {
-    background:
-            -webkit-radial-gradient(white 15%, transparent 15.1%),
-            -webkit-radial-gradient(white 15%, transparent 15.1%),
-            rgb(23, 255, 0);
-    background-position: 0 0, 25px 25px;
-    background-size: 50px 50px;
     position: relative;
     margin: 0 auto;
 }
 .box {
-    width: 400px;
-    height: 250px;
-}
-.lid {
-    width: 404px;
-    height: 70px;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
-    z-index: 1;
-    padding: 0 2px;
-    background-color: rgb(23, 255, 0);
 
-    /* transitions */
-    top: 0;
-    left: 0;
-    transition:
-            top ease-out 0.5s,
-            left ease-out 0.5s,
-            transform ease-out 0.5s;
+    height: 200px;
 }
-.box span, .lid span {
-    position: absolute;
-    display: block;
-    background: rgba(216, 52, 52,0);
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+.globb{
+    margin-top: 25px;
 }
-.box span:first-child {
-    width: 100%;
-    height: 60px;
-    top: 80px;
-}
-.box span:last-child, .lid span {
-    width: 60px;
-    height: 100%;
-    left: 170px;
-    margin-bottom:  25px;
-}
-.lid span {
-    left: 172px;
+.lid img{
+
+    height: 70px;
 }
 .priz{
     align-items: center;
@@ -268,7 +234,7 @@ a span:nth-child(4)
 }
 .promo p {
     font-size: 24px;
-    color: #f40317;
+    color: black;
     margin: 0;
 }
 .promo h2 {
