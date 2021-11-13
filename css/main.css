@@ -5,7 +5,16 @@
 {
     color: green !important;
 }
-
+.xechqanday:before{
+    width: 40px;
+    height: 3px;
+    display: block;
+    background-color: #10E114;
+    content: " ";
+    float: left;
+    margin-right: 10px;
+    margin-top: 20px;
+}
 .corbut
 {
     z-index: 999;
@@ -193,6 +202,29 @@ img {
     transform: rotateY(140deg);
 }
 /*end*/
+/*afzalliklar*/
+.afzal{
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    min-height: 300px;
+}
+.bgafzal{
+    background-color: #10E114;
+}
+.afzal img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+.afzal h4, p{
+    text-align: center;
+    margin: 2px 5px;
+}
+
+
+/*and*/
+
 .maxstak{
     background-color: limegreen;
 }
@@ -222,27 +254,74 @@ img {
 }
 /**/
 /*siz bilan qanday ishlaymiz*/
-.ishlol{
+.ishlo{
     border-radius: 10px;
     padding: 1px 12px 0 4px;
 }
-
+/*.kpi{*/
+/*    margin-left: 100%;*/
+/*}*/
+/*.Obunachilar{*/
+/*    margin-left: 75%;*/
+/*}*/
+/*.Shartnoma{*/
+/*    margin-left: 50%;*/
+/*}*/
+/*.Tarif{*/
+/*    margin-left: 25%;*/
+/*}*/
+/*.Forma{*/
+/*    margin-left: -30%;*/
+/*}*/
+.numb.numb1{
+    border: solid 10px #F8363C;
+}
+.numb.numb2{
+    border: solid 10px #E032B2;
+}
+.numb.numb3{
+    border: solid 10px #DFE42A;
+}
+.numb.numb4{
+    border: solid 10px #34D6B9;
+}
+.numb.numb5{
+    border: solid 10px #10E114;
+}
 .numb{
     width: 60px;
     height: 60px;
-    border: solid 10px blue;
     border-radius: 10px;
     font-size: 27px;
     color: white;
     text-align: center;
     margin: 7px;
-    margin-bottom: 0;
+    margin-bottom: 7px;
     float: left;
+}
+.bg-ish{
+    background-color: #050801;
+    border-radius: 10px;
+}
+.texish.texish1{
+    background-color: #F8363C;
+}
+.texish.texish2{
+    background-color: #E032B2;
+}
+.texish.texish3{
+    background-color: #DFE42A;
+}
+.texish.texish4{
+    background-color: #34D6B9;
+}
+.texish.texish5{
+    background-color: #10E114;
 }
 
 .texish{
     text-align: center;
-    background-color: red;
+    background-color: limegreen;
     width: 200px;
     height: 26px;
     border-radius: 13px;
@@ -254,9 +333,32 @@ img {
     font-weight: bold;
 }
 .itext{
-    margin-top: -2px;
+    margin-top: 26px;
     line-height: 16px;
     font-size: 15px;
     color: #fff;
 }
+.nishon{
+    margin-top: -50px;
+}
+.nishon img{
+    width: 285px;
+}
+/*fotr*/
+.mapjon{
+    width: 100%;
+    height: 350px;
+}
+.fotrbg{
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    background: black;
+    color: white;
 
+}
+
+
+
+
+/*and*/
